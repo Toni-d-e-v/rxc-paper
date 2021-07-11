@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+			<title>Universal Paper Wallet Generator</title>
+			<meta name="description" content="A lightweight, reliable, fast, open-source universal paper wallet generator supporting almost every major cryptocurrency">
+				<meta name="keywords" content="minimal, lightweight, reliable, fast, universal, paper, wallet, generator, offline, bitcoin, btc, cryptocurrency">
+					<meta name="viewport" content="width=device-width, initial-scale=1">
+                        <link rel="stylesheet" href="css/style.css">
+							<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+						</head>
+						<body>
+							<div id="container">
+								<br>
+									<br>
+										<h1 id="title">RXC Paper wallet generator</h1>
+										<br>
+											<br>
+												<input type="text" id="searchInput" onkeyup="Search()" placeholder="Create">
+													<ol id="searchOL">
+			
+														<li>
+															<a href="RXC.html">Ruxcrypto (RXC)</a>
+														</li>
+													
+													</ol><br>
+ Code</a></p>
+<script>
+function Search() {
+var input, filter, ul, li, a, i;
+input = document.getElementById("searchInput");
+filter = input.value.toUpperCase();
+ul = document.getElementById("searchOL");
+li = ul.getElementsByTagName("li");
+for (i = 0; i < li.length; i++) {
+a = li[i].getElementsByTagName("a")[0];
+if (a.textContent.toUpperCase().indexOf(filter) > -1) {li[i].style.display = "";}
+else {li[i].style.display = "none";}
+}}
+var ol = document.getElementById("searchOL");
+ol.onclick = function(event) {var target = event.target;if(target.className === "erc20"){if (location.hostname === "") window.location.replace("ethereum.html?"+ target.textContent);else window.location.replace("ethereum?"+  target.textContent);}};
+</script>
+</body>
+</html>
